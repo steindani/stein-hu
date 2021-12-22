@@ -1,7 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url(https://rsms.me/inter/inter.css);
+@import "npm:@fontsource/inter/variable.css";
+@import "npm:@fontsource/inter/400.css";
+@import "npm:@fontsource/inter/800.css";
 
 @layer base {
   a {

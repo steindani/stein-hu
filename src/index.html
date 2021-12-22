@@ -14,17 +14,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       http-equiv="Content-Security-Policy"
-      content="script-src 'self'; style-src 'self' https://rsms.me; font-src 'self' https://rsms.me;"
+      content="script-src 'self'; style-src 'self'; font-src 'self';"
     />
 
     <link rel="stylesheet" href="./main.css" />
-    <!-- <link rel="preload" href="https://rsms.me/inter/inter.css" crossorigin="anonymous" as="style" /> -->
-    <link
-      rel="preload"
-      href="https://rsms.me/inter/font-files/Inter-roman.var.woff2?v=3.19"
-      crossorigin="anonymous"
-      as="font"
-    />
   </head>
 
   <body
@@ -39,14 +32,29 @@
   >
     <main class="p-5">
       <header class="flex flex-col max-w-md mb-8">
-        <img
+        <!-- <img
           src="./img/avatar-400.jpg"
           width="6rem"
           height="6rem"
           class="w-24 h-24 rounded-full mb-4"
           loading="lazy"
           alt="Profile picture of Daniel Stein"
-        />
+        /> -->
+        <picture
+          width="6rem"
+          height="6rem"
+          class="w-24 h-24 rounded-full overflow-hidden mb-4"
+          loading="lazy"
+          alt="Profile picture of Daniel Stein"
+        >
+          <source srcset="./img/avatar-400.webp" type="image/webp" />
+          <source srcset="./img/avatar-400.avif" type="image/avif" />
+          <source srcset="./img/avatar-400.jpg" type="image/jpeg" />
+          <img
+            src="./img/avatar-400.jpg"
+            alt="Profile picture of Daniel Stein"
+          />
+        </picture>
         <p>Hello, I'm</p>
         <h1 class="text-4xl font-extrabold group">
           <span class="hidden group-hover:inline">Stein </span>Dániel<span
