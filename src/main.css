@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url(https://rsms.me/inter/inter.css);
+
+@layer base {
+  a {
+    @apply hover:transition-all duration-1000 underline underline-offset-2 decoration-wavy decoration-emerald-200 hover:decoration-emerald-500 mb-2 inline-block;
+  }
+
+  ul li {
+    @apply ml-5 relative;
+    @apply before:content-['–'] before:absolute before:-left-4;
+  }
+}
