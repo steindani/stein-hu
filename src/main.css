@@ -7,7 +7,7 @@
 
 @layer base {
   a {
-    @apply hover:transition-all hover:duration-1000 underline underline-offset-2 decoration-wavy decoration-emerald-200 hover:decoration-emerald-500 inline-block;
+    @apply underline underline-offset-2 decoration-wavy decoration-2 decoration-emerald-200 hover:decoration-emerald-500 inline-block;
   }
 
   ul li {
