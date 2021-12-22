@@ -5,11 +5,11 @@
 
 @layer base {
   a {
-    @apply hover:transition-all duration-1000 underline underline-offset-2 decoration-wavy decoration-emerald-200 hover:decoration-emerald-500 mb-2 inline-block;
+    @apply hover:transition-all hover:duration-1000 underline underline-offset-2 decoration-wavy decoration-emerald-200 hover:decoration-emerald-500 inline-block;
   }
 
   ul li {
-    @apply ml-5 relative;
+    @apply ml-5 mb-2 relative;
     @apply before:content-['–'] before:absolute before:-left-4;
   }
 }

@@ -3,17 +3,49 @@
   <head>
     <meta charset="utf-8" />
     <title>Stein, Dániel</title>
-    <link rel="stylesheet" href="./main.css" />
+
+    <meta
+      name="description"
+      content="Personal website of Dániel Stein, software engineer."
+    />
+    <meta name="keywords" content="Dániel,Stein,software,engineer,Budapest" />
+    <meta name="author" content="Dániel Stein" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self'; style-src 'self' https://rsms.me; font-src 'self' https://rsms.me;"
+    />
+
+    <link rel="stylesheet" href="./main.css" />
+    <!-- <link rel="preload" href="https://rsms.me/inter/inter.css" crossorigin="anonymous" as="style" /> -->
+    <link
+      rel="preload"
+      href="https://rsms.me/inter/font-files/Inter-roman.var.woff2?v=3.19"
+      crossorigin="anonymous"
+      as="font"
+    />
   </head>
 
-  <body class="bg-white antialised overflow-x-hidden text-zinc-900">
+  <body
+    class="
+      bg-white
+      antialised
+      overflow-x-hidden
+      text-zinc-900
+      flex flex-col
+      min-h-screen
+    "
+  >
     <main class="p-5">
       <header class="flex flex-col max-w-md mb-8">
         <img
           src="./img/avatar-400.jpg"
+          width="6rem"
+          height="6rem"
           class="w-24 h-24 rounded-full mb-4"
           loading="lazy"
+          alt="Profile picture of Daniel Stein"
         />
         <p>Hello, I'm</p>
         <h1 class="text-4xl font-extrabold group">
@@ -26,8 +58,15 @@
         <p>A software engineer from Budapest.</p>
         <p>
           Currently working at
-          <a href="https://wise.com" target="_blank">Wise</a>, previously at
-          <a href="https://tresorit.com" target="_blank">Tresorit</a>.
+          <a href="https://wise.com" target="_blank" rel="noopener noreferrer"
+            >Wise</a
+          >, previously at
+          <a
+            href="https://tresorit.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Tresorit</a
+          >.
         </p>
       </header>
 
@@ -35,30 +74,51 @@
         <p class="mb-2">You might want to contact me at:</p>
         <ul class="mb-4">
           <li>
-            <a href="https://twitter.com/steindani_pub" target="_blank"
+            <a
+              href="https://twitter.com/steindani_pub"
+              target="_blank"
+              rel="noopener noreferrer"
               >Twitter &mdash; public</a
             >
           </li>
           <li>
-            <a href="https://twitter.com/steindani" target="_blank"
+            <a
+              href="https://twitter.com/steindani"
+              target="_blank"
+              rel="noopener noreferrer"
               >Twitter &mdash; private</a
             >
           </li>
           <li>
-            <a href="https://linkedin.com/in/steindani" target="_blank"
+            <a
+              href="https://linkedin.com/in/steindani"
+              target="_blank"
+              rel="noopener noreferrer"
               >LinkedIn</a
             >
           </li>
           <li>
-            <a href="https://facebook.com/steindani" target="_blank"
+            <a
+              href="https://github.com/steindani"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://facebook.com/steindani"
+              target="_blank"
+              rel="noopener noreferrer"
               >Facebook</a
             >
           </li>
         </ul>
-        <p>Or send me a message: hi <em>at</em> stein.hu</p>
+        <p>Or send me a message: hi at stein.hu</p>
       </section>
-
-      <aside class="absolute bottom-5 left-5">:)</aside>
     </main>
+    <aside class="flex-grow flex flex-col justify-end p-5">
+      <div class="sticky">:)</div>
+    </aside>
   </body>
 </html>
